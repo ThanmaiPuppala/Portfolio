@@ -47,10 +47,10 @@ const Projects = () => {
             initial={{opacity:0,x:-50}}
             whileInView={{opacity:1,x:0}}
             transition={{ duration:1,delay:0.1}}
-            className='relative w-fit group overflow-hidden rounded-2xl'>
-            <Image src={spacez} alt='spacez' className='w-xl'/> 
+            className='relative w-fit group overflow-hidden rounded-2xl focus-within:opacity-100'>
+            <div tabIndex={0} className="outline-none"><Image src={spacez} alt='spacez' className='w-xl'/></div> 
             {/* glass content */}
-            <div className='absolute inset-0  bg-white/10 backdrop-blur-md text-center opacity-0 group-hover:opacity-100  transition duration-300 ease-in-out z-10 overflow-y-auto sm:overflow-y-scroll px-4 sm:px-2 py-6'>
+            <div className='absolute inset-0  bg-white/10 backdrop-blur-md text-center opacity-0 group-hover:opacity-100 focus-within:opacity-100 transition duration-300 ease-in-out z-10 overflow-y-auto sm:overflow-y-scroll px-4 sm:px-2 py-6'>
               <div className='flex flex-col gap-2 justify-center items-center'>
                     <h3 className='text-3xl text-amber-600 font-bold mb-2'>SpaceZ Hotel</h3>
                     <p className='font-Ovo text-sm text-white p-3'>SpaceZ Hotel is a fully responsive hotel booking interface designed for seamless cross-device experience.It features animated transitions, a modern UI layout, and clear call-to-actions.The design emphasizes user engagement through interactive flows and intuitive structure.Demonstrates strong front-end skills in layout, reusability, and UX best practices.</p>

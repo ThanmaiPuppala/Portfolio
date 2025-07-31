@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+*{
+  font-family:Outfit;
+}
+html {
+  scroll-behavior: smooth;
+}
+@theme{
+  --color-lightHover:#fcf4ff;
+  --color-darkHover:#2a004a;
+  --color-darkTheme:#1E1E1E;
+  --font-Outfit:Outfit, sans-serif;
+  --font-Ovo:Ovo, serif;
+  --shadow-black:4px 4px 0 #000;
+  --shadow-white:4px 4px 0 #fff;
+}
+@keyframes Anim_shake {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  10%, 30%, 50%, 70% {
+    transform: translateY(-10px);
+  }
+  20%, 40%, 60% {
+    transform: translateY(10px);
+  }
+  80% {
+    transform: translateY(8px);
+  }
+  90% {
+    transform: translateY(-8px);
+  }
+}
+
+.shake-on-hover:hover {
+  animation: Anim_shake 0.8s linear;
+}
+@custom-variant dark (&:where(.dark, .dark *));

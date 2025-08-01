@@ -81,7 +81,7 @@ const Projects = () => {
         className='relative w-fit group overflow-hidden rounded-2xl'>
             <div onClick={() => setShowOverlay2(prev => !prev)}><Image src={evogym} alt='evogym' className='w-xl'/></div> 
             {/* glass content */}
-            <div className={`absolute inset-0  bg-[#FFE1E0]/10 backdrop-blur-md text-center opacity-0 group-hover:opacity-100 ${showOverlay2? 'opacity-100' : 'opacity-0 pointer-events-none'} transition duration-300 ease-in-out z-10 overflow-y-auto sm:overflow-y-scroll px-4 sm:px-2 py-6`}onClick={() => setShowOverlay2(false)}>
+            <div className={`absolute inset-0  bg-[#FFE1E0]/10 backdrop-blur-md text-center opacity-0 group-hover:opacity-100 ${showOverlay2? 'opacity-100' : 'opacity-0 pointer-events-none'} transition duration-300 ease-in-out z-10 overflow-y-auto sm:overflow-y-scroll px-4 sm:px-2 py-6`} onClick={() => setShowOverlay2(false)}>
               <div className='flex flex-col gap-2 justify-center items-center'>
                     <h3 className='text-3xl text-[#e0615c] font-bold mb-2'>Evo Gym</h3>
                     <p className='font-Ovo text-sm text-black p-3'>Evo Gym is a modern, fully responsive fitness website designed to deliver a smooth and dynamic user experience. It features clean layouts, interactive animations, and a modular architecture optimized for performance and reusability. The project focuses on strong UI/UX practices, clear call-to-action elements, and mobile-first responsiveness.</p>
